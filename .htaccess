@@ -1,0 +1,4 @@
+# Untuk Apache / XAMPP: blokir file tersembunyi (kecuali .well-known)
+<FilesMatch "^\.(?!well-known)">
+  Require all denied
+</FilesMatch>

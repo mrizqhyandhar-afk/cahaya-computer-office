@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontak & Booking – Cahaya Computer</title>
+  <meta name="description" content="Booking service lewat WhatsApp Cahaya Computer.">
+  <link rel="icon" href="images/logo.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="images/logo.jpg" alt="Logo Cahaya Computer" width="42" height="42"><span>Cahaya Computer</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Buka menu"><i class="bi bi-list fs-2"></i></button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li><li class="nav-item"><a class="nav-link" href="layanan.html">Layanan</a></li><li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li><li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li><li class="nav-item"><a class="nav-link active" href="kontak.html">Kontak</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-dark btn-pill" href="kontak.html">Booking Service</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header class="page-hero">
+  <div class="rays" aria-hidden="true"></div>
+  <div class="container position-relative">
+    <div class="crumb"><a href="index.html">Beranda</a> / Kontak</div>
+    <h1>Kontak &amp; Booking</h1>
+    <p>Isi form, lalu pesanmu terkirim ke WhatsApp kami.</p>
+  </div>
+</header>
+<section class="section section-dark">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <h2>Hubungi kami</h2>
+        <p>Kamu akan dikabari soal jadwal dan estimasi biaya lewat WhatsApp.</p>
+        <a class="contact-link" href="https://wa.me/6282211511611?text=Halo%20Cahaya%20Computer" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i><span><strong>WhatsApp</strong><small>0822-1151-1611</small></span></a>
+        <a class="contact-link" href="https://www.instagram.com/cahaya.computer.office/" target="_blank" rel="noopener"><i class="bi bi-instagram"></i><span><strong>Instagram</strong><small>@cahaya.computer.office</small></span></a>
+        <a class="contact-link" href="https://www.google.com/maps/search/?api=1&amp;query=Jl.+Puri+Taman+Sari+Blok+G4+No+6" target="_blank" rel="noopener"><i class="bi bi-geo-alt-fill"></i><span><strong>Lokasi</strong><small>Jl. Puri Taman Sari Blok G4 No 6</small></span></a>
+        <ul class="list-unstyled contact-list mt-3">
+          <li><i class="bi bi-clock-fill"></i> Senin – Sabtu, 09.00 – 20.00</li>
+        </ul>
+      </div>
+      <div class="col-lg-7">
+        <form id="bookingForm" class="booking" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6"><label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" required><div class="invalid-feedback">Tulis namamu dulu.</div></div>
+            <div class="col-md-6"><label for="pilihLayanan" class="form-label">Layanan</label>
+              <select class="form-select" id="pilihLayanan" required><option value="">Pilih layanan</option><option>Install Ulang Windows</option><option>Ganti SSD</option><option>Upgrade RAM</option><option>Ganti Keyboard</option><option>Service Engsel</option><option>Ganti Speaker</option><option>Ganti Baterai</option><option>Ganti Pasta</option><option>Pasang Anti Gores</option><option>Pasang Stiker Laptop</option><option>Beli Mouse</option><option>Beli Pelindung Keyboard</option><option>Beli Flashdisk</option><option>Beli Box HDD</option><option>Beli Tas Laptop</option><option>Beli RAM</option><option>Beli SSD</option><option>Beli Baterai</option><option>Beli Adaptor</option><option>Beli Anti Gores</option><option>Beli Garskin</option></select>
+              <div class="invalid-feedback">Pilih salah satu layanan.</div></div>
+            <div class="col-12"><label for="perangkat" class="form-label">Merek &amp; tipe perangkat</label>
+              <input type="text" class="form-control" id="perangkat" placeholder="Contoh: Asus VivoBook 14"></div>
+            <div class="col-12"><label for="catatan" class="form-label">Keluhan atau catatan</label>
+              <textarea class="form-control" id="catatan" rows="3"></textarea></div>
+            <div class="col-12"><button type="submit" class="btn btn-warning btn-lg btn-pill w-100"><i class="bi bi-whatsapp me-2"></i>Kirim lewat WhatsApp</button></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+    <div class="d-flex align-items-center gap-2"><img src="images/logo.jpg" alt="" width="32" height="32"><strong>Cahaya Computer</strong></div>
+    <div class="footer-links"><a href="index.html">Beranda</a><a href="layanan.html">Layanan</a><a href="produk.html">Produk</a><a href="tentang.html">Tentang</a><a href="kontak.html">Kontak</a></div>
+    <div class="footer-social"><a href="https://wa.me/6282211511611" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a><a href="https://www.instagram.com/cahaya.computer.office/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="https://www.google.com/maps/search/?api=1&amp;query=Jl.+Puri+Taman+Sari+Blok+G4+No+6" target="_blank" rel="noopener" aria-label="Lokasi"><i class="bi bi-geo-alt-fill"></i></a></div>
+    <small>&copy; <span id="year"></span> Cahaya Computer</small>
+  </div>
+</footer>
+<a href="#" id="toTop" class="to-top" aria-label="Kembali ke atas"><i class="bi bi-arrow-up"></i></a>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<script src="assets/booking-php.js"></script>
+</body>
+</html>
